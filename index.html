@@ -3,151 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Registration</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="event-registration-page">
-      <div class="title-form">
-        <h1>Event Registration Form</h1>
+    <div class="register-container">
+      <div>
+        <h1>Register</h1>
       </div>
-      <div class="about-event">
-        <h2>About This Event</h2>
-        <table>
-          <tr>
-            <td>Event Name</td>
-            <td>Digital Marketing Masterclass</td>
-          </tr>
-          <tr>
-            <td>Date</td>
-            <td>October 15, 2028</td>
-          </tr>
-          <tr>
-            <td>Time</td>
-            <td>2:00 PM - 4:00 PM</td>
-          </tr>
-          <tr>
-            <td>Speaker</td>
-            <td>Sarah Johnson (Digital Marketing Expert)</td>
-          </tr>
-        </table>
-      </div>
-      <hr />
-      <div class="form-container">
-        <div>
-          <h3>Participant Information</h3>
-        </div>
-        <div>
-          <form action="#" method="post">
-            <div class="first-row-form">
-              <div>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="fullname" id="fullname" required />
-              </div>
-              <div>
-                <label for="birth">Date of Birth</label>
-                <input type="date" name="birth" id="birth" />
-              </div>
-            </div>
-            <div class="second-row-form">
-              <div class="gender-container">
-                <div>
-                  <p>Gender</p>
-                </div>
-                <div>
-                  <input type="radio" name="gender" id="male" value="male" />
-                  <label for="male">Male</label>
-                </div>
-                <div>
-                  <input
-                    type="radio"
-                    name="gender"
-                    id="female"
-                    value="female"
-                  />
-                  <label for="female">Female</label>
-                </div>
-              </div>
-              <div class="phone-email-container">
-                <div>
-                  <label for="phone">Phone Number</label>
-                  <input type="text" name="phone" id="phone" />
-                </div>
-                <div>
-                  <label for="email">Email</label>
-                  <input type="email" name="email" id="email" />
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <p>Where did you hear about this virtual event?</p>
-              <input type="radio" value="facebook" id="facebook" name="hear" />
-              <label for="facebook">Facebook</label>
-
-              <input type="radio" value="youtube" id="youtube" name="hear" />
-              <label for="youtube">YouTube</label>
-
-              <input
-                type="radio"
-                value="instagram"
-                id="instagram"
-                name="hear"
-              />
-              <label for="instagram">Instagram</label>
-
-              <input type="radio" value="twitter" id="twitter" name="hear" />
-              <label for="twitter">Twitter</label>
-
-              <input type="radio" value="other" id="other" name="hear" />
-              <label for="other">Other</label>
-            </div>
-
-            <hr />
-
-            <h3>Payment Information</h3>
-            <div>
-              <div>
-                <label for="tickets">Number of Tickets</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="payment-method">Payment Method</label>
-                <input type="radio" value="credit" id="credit" name="payment" />
-                <label for="facebook">Credit Card</label>
-
-                <input type="radio" value="debit" id="debit" name="payment" />
-                <label for="youtube">Debit Card</label>
-
-                <input type="radio" value="cash" id="cash" name="payment" />
-                <label for="instagram">Cash</label>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <p>
-                    I understand that participation in this event may involve
-                    some degree of risk. I release WebinarPross LLC from any
-                    liability for injury, loss, or damage to personal property.
-                  </p>
-                  <div>
-                    <input
-                      type="checkbox"
-                      value="understand"
-                      id="understand"
-                      name="understand"
-                    />
-                    <label for="understand">Yes, I understand</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <button type="submit">Register</button>
-            </div>
-          </form>
-        </div>
+      <div>
+        <form action="">
+          <table>
+            <tr>
+              <td><label for="first-name-label">First Name</label></td>
+              <td><label for="last-name-label">Last Name</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  name="first-name-input"
+                  id="first-name-input"
+                  placeholder="John"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="last-name-input"
+                  id="last-name-input"
+                  placeholder="Doe"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="email" placeholder="johndoe@gmail.com" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password-label">Password</label></td>
+              <td>
+                <label for="confirm-password-label">Confirm Password</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="password"
+                  name="password-input"
+                  id="password-input"
+                  required
+                />
+              </td>
+              <td>
+                <input
+                  type="password"
+                  name="confirm-password-input"
+                  id="confirm-password-input"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="gender-label">Gender</label></td>
+              <td><label for="hobie-label">Hobbies</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  required
+                />
+                <label for="gender">Male</label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  required
+                />
+                <label for="gender">Female</label>
+              </td>
+              <td>
+                <input type="text" name="hobby" id="hobby" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="source-income-label">Source of Income</label></td>
+              <td><label for="income-label">Income</label></td>
+            </tr>
+            <tr>
+              <td>
+                <select name="income" id="income" required>
+                  <option value="employed">Employed</option>
+                  <option value="business">Business</option>
+                  <option value="inheritance">Inheritance</option>
+                </select>
+              </td>
+              <td>
+                <input type="range" min="1000" max="1000000" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="profile-label">Upload Profile Picture</label></td>
+              <td><label for="age-label">Age</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="file" placeholder="Upload Photo" required />
+              </td>
+              <td>
+                <input type="number" min="5" max="90" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="bio">Bio</label></td>
+            </tr>
+            <tr>
+              <td>
+                <textarea
+                  name="bio"
+                  id="bio"
+                  placeholder="Enter your bio"
+                  minlength="20"
+                  maxlength="100"
+                  required
+                >
+                </textarea>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="submit" id="submit" /></td>
+            </tr>
+          </table>
+        </form>
       </div>
     </div>
   </body>
