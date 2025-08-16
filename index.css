@@ -28,7 +28,7 @@ body
     display: flex;
     flex-direction: column;
 }
-#bio,#submit, #first-name-input, #last-name-input, #password-input, #email-input,  #age-input, #confirm-password-input, #hobby-input, #income-select
+#bio,#submit, #first-name-input, #last-name-input, #password-input, #email-input,  #age-input, #confirm-password-input, #hobby-input, #income-select , #income-input
 {
     padding: 0.9rem;
     width: 13rem;

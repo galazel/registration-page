@@ -2,158 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Register Form</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@176&family=Michroma&family=Montserrat:ital@0;1&family=Nata+Sans:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Josefin+Sans&family=Lexend&family=Michroma&family=Montserrat&family=Nata+Sans&family=Noto+Sans+Mono&family=Raleway&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="register-container">
-      <div>
-        <h1>Register</h1>
-      </div>
-      <div>
-        <form action="" class="form-container">
-          <table>
-            <tr>
-              <td><label for="first-name-label">First Name</label></td>
-              <td><label for="last-name-label">Last Name</label></td>
-            </tr>
-            <tr>
-              <td>
-                <input
-                  type="text"
-                  name="first-name-input"
-                  id="first-name-input"
-                  placeholder="John"
-                  required
-                />
-              </td>
-              <td>
-                <input
-                  type="text"
-                  name="last-name-input"
-                  id="last-name-input"
-                  placeholder="Doe"
-                  required
-                />
-              </td>
-            </tr>
+      <h1>Register</h1>
 
-            <tr>
-              <td><label for="password-label">Password</label></td>
-              <td>
-                <label for="confirm-password-label">Confirm Password</label>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input
-                  type="password"
-                  name="password-input"
-                  id="password-input"
-                  required
-                />
-              </td>
-              <td>
-                <input
-                  type="password"
-                  name="confirm-password-input"
-                  id="confirm-password-input"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td><label for="gender-label">Gender</label></td>
-              <td><label for="hobie-label">Hobbies</label></td>
-            </tr>
-            <tr>
-              <td>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="male"
-                  value="male"
-                  required
-                />
-                <label for="gender">Male</label>
-                <input
-                  type="radio"
-                  name="gender"
-                  id="female"
-                  value="female"
-                  required
-                />
-                <label for="gender">Female</label>
-              </td>
-              <td>
-                <input type="text" name="hobby" id="hobby-input" required />
-              </td>
-            </tr>
-            <tr>
-              <td><label for="source-income-label">Source of Income</label></td>
-              <td><label for="income-label">Income</label></td>
-            </tr>
-            <tr>
-              <td>
-                <select name="income" id="income-select" required>
-                  <option value="employed">Employed</option>
-                  <option value="business">Business</option>
-                  <option value="inheritance">Inheritance</option>
-                </select>
-              </td>
-              <td>
-                <input type="range" min="1000" max="1000000" required />
-              </td>
-            </tr>
-            <tr>
-              <td><label for="email-label">Email</label></td>
-              <td><label for="age-label">Age</label></td>
-            </tr>
-            <tr>
-              <td>
-                <input
-                  type="email"
-                  placeholder="johndoe@gmail.com"
-                  required
-                  id="email-input"
-                />
-              </td>
-              <td>
-                <input type="number" min="5" max="90" required id="age-input" />
-              </td>
-            </tr>
-            <tr>
-              <td><label for="profile-label">Upload Profile Picture</label></td>
-            </tr>
-            <tr>
-              <td>
-                <input type="file" required id="profile" />
-              </td>
-            </tr>
-          </table>
-          <div class="submit-container">
-            <div>
-              <label for="bio">Bio</label> <br>
-              <textarea
-                name="bio"
-                id="bio"
-                required
-              >
-              </textarea>
-            </div>
-            <div class="submit">
-              <input type="submit" name="submit" id="submit" />
-            </div>
+      <form onsubmit="submitForm(event)">
+        <table>
+          <tr>
+            <td><label for="first-name-input">First Name</label></td>
+            <td><label for="last-name-input">Last Name</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="first-name-input" placeholder="John" required /></td>
+            <td><input type="text" id="last-name-input" placeholder="Doe" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password-input">Password</label></td>
+            <td><label for="confirm-password-input">Confirm Password</label></td>
+          </tr>
+          <tr>
+            <td><input type="password" id="password-input" required /></td>
+            <td><input type="password" id="confirm-password-input" required /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td><label for="hobby-input">Hobby</label></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="gender" id="male" value="Male" required />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="Female" required />
+              <label for="female">Female</label>
+            </td>
+            <td><input type="text" id="hobby-input" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="income-select">Source of Income</label></td>
+            <td><label for="income-input">Income</label></td>
+          </tr>
+          <tr>
+            <td>
+              <select id="income-select" required>
+                <option selected disabled>Select</option>
+                <option value="employed">Employed</option>
+                <option value="business">Business</option>
+                <option value="inheritance">Inheritance</option>
+              </select>
+            </td>
+            <td><input type="text" id="income-input" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email-input">Email</label></td>
+            <td><label for="age-input">Age</label></td>
+          </tr>
+          <tr>
+            <td><input type="email" id="email-input" placeholder="johndoe@gmail.com" required /></td>
+            <td><input type="number" id="age-input" min="5" max="90" required /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><label for="profile">Upload Profile Picture</label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="file" id="profile" required /></td>
+          </tr>
+        </table>
+
+        <div class="submit-container">
+          <div>
+            <label for="bio">Bio</label><br />
+            <textarea id="bio" required></textarea>
           </div>
-        </form>
-      </div>
+          <div class="submit">
+            <input type="submit" id="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+
+      <div id="output"></div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
