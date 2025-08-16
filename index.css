@@ -1,0 +1,64 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.register-container
+{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 80vh;
+    padding: 2rem;
+    align-items: center;
+    background-color: #abc4ff;
+    box-shadow: 10px 10px 100px skyblue;
+    border-radius: 1rem;
+    gap: 10px;
+}
+.form-container
+{
+    display: flex;
+    flex-direction: column;
+}
+#bio,#submit, #first-name-input, #last-name-input, #password-input, #email-input,  #age-input, #confirm-password-input, #hobby-input, #income-select
+{
+    padding: 0.9rem;
+    width: 13rem;
+    border-radius: 10px;
+    border-style: none;
+    background-color: aliceblue;
+}
+#bio
+{    
+    width:29rem;
+    height:7rem;
+    resize: none;
+}
+#submit
+{
+    cursor: pointer;
+}
+#submit:hover
+{
+    background-color: rgb(36, 134, 214);
+}
+.submit
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.submit-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

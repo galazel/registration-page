@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@176&family=Michroma&family=Montserrat:ital@0;1&family=Nata+Sans:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="register-container">
@@ -12,7 +18,7 @@
         <h1>Register</h1>
       </div>
       <div>
-        <form action="">
+        <form action="" class="form-container">
           <table>
             <tr>
               <td><label for="first-name-label">First Name</label></td>
@@ -38,14 +44,7 @@
                 />
               </td>
             </tr>
-            <tr>
-              <td><label for="email">Email</label></td>
-            </tr>
-            <tr>
-              <td>
-                <input type="email" placeholder="johndoe@gmail.com" required />
-              </td>
-            </tr>
+
             <tr>
               <td><label for="password-label">Password</label></td>
               <td>
@@ -94,7 +93,7 @@
                 <label for="gender">Female</label>
               </td>
               <td>
-                <input type="text" name="hobby" id="hobby" required />
+                <input type="text" name="hobby" id="hobby-input" required />
               </td>
             </tr>
             <tr>
@@ -103,7 +102,7 @@
             </tr>
             <tr>
               <td>
-                <select name="income" id="income" required>
+                <select name="income" id="income-select" required>
                   <option value="employed">Employed</option>
                   <option value="business">Business</option>
                   <option value="inheritance">Inheritance</option>
@@ -114,37 +113,45 @@
               </td>
             </tr>
             <tr>
-              <td><label for="profile-label">Upload Profile Picture</label></td>
+              <td><label for="email-label">Email</label></td>
               <td><label for="age-label">Age</label></td>
             </tr>
             <tr>
               <td>
-                <input type="file" placeholder="Upload Photo" required />
-              </td>
-              <td>
-                <input type="number" min="5" max="90" required />
-              </td>
-            </tr>
-            <tr>
-              <td><label for="bio">Bio</label></td>
-            </tr>
-            <tr>
-              <td>
-                <textarea
-                  name="bio"
-                  id="bio"
-                  placeholder="Enter your bio"
-                  minlength="20"
-                  maxlength="100"
+                <input
+                  type="email"
+                  placeholder="johndoe@gmail.com"
                   required
-                >
-                </textarea>
+                  id="email-input"
+                />
+              </td>
+              <td>
+                <input type="number" min="5" max="90" required id="age-input" />
               </td>
             </tr>
             <tr>
-              <td><input type="submit" name="submit" id="submit" /></td>
+              <td><label for="profile-label">Upload Profile Picture</label></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="file" required id="profile" />
+              </td>
             </tr>
           </table>
+          <div class="submit-container">
+            <div>
+              <label for="bio">Bio</label> <br>
+              <textarea
+                name="bio"
+                id="bio"
+                required
+              >
+              </textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" name="submit" id="submit" />
+            </div>
+          </div>
         </form>
       </div>
     </div>
